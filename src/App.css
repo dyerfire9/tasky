@@ -57,5 +57,12 @@
       font-size: 22px;
 
     }
-
+    .task-bell{
+      position: absolute;
+      right: 35px;
+      top: 5px;
+      color: red;
+      cursor: pointer;
+      font-size: 22px;
+    }
    

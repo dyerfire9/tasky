@@ -34,13 +34,14 @@ const Tasks = () => {
     setTasks(tasks.filter((task) => task.id !== id))
   }
 
-//   // Update Task Reminder
-//   const updateTask = (id) => {console.log('Hi', id)
-// }
+  // Update Task Reminder
+  const updateTask = (id) => {
+    setTasks(tasks.map((task) => task.id === id ? {...task, reminder: !task.reminder} : task))
+}
 
   return (
     <div className='tasks'>
-        {tasks.map((task)=> (<Task key={task.id} task={task} onDelete={deleteTask}/>))}
+        {tasks.map((task)=> (<Task key={task.id} task={task} onDelete={deleteTask} onToggle={updateTask}/>))}
     </div>
   )
 }
