@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   border: 1px solid;
-  margin: 5%;
+  margin: 5% 15% ;
 }
 
 .header{
@@ -25,3 +25,37 @@
     font-size: 20px;
     font-weight: 600;
   }
+
+  .tasks{
+    margin: 10px;
+    border: 1px solid green;
+  }
+
+  .task{
+    border: 1px solid blue;
+    padding: 2px;
+    border-radius: 5px;
+    margin-top: 5px;  
+    text-align: left;
+    position: relative;
+
+  }
+    .task-title{
+      padding: 0px 15px;
+      margin: 0;
+    }
+    .task-date{
+      margin: 0;
+      padding: 0px 15px;
+    }
+    .task-delete{
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      color: red;
+      cursor: pointer;
+      font-size: 22px;
+
+    }
+
+   
