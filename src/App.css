@@ -1,38 +1,70 @@
 .App {
   text-align: center;
+  border: 1px solid;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+  margin: 5% 15% ;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  text-align: center;
+  position: relative;
+  border: 1px solid red;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .title{
+    display: inline-block;
+    margin: 2%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .add-btn{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 5px 25px 5px 25px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
   }
-}
+
+  .tasks{
+    margin: 10px;
+    border: 1px solid green;
+  }
+
+  .task{
+    border: 1px solid blue;
+    padding: 2px;
+    border-radius: 5px;
+    margin-top: 5px;  
+    text-align: left;
+    position: relative;
+
+  }
+    .task-title{
+      padding: 0px 15px;
+      margin: 0;
+    }
+    .task-date{
+      margin: 0;
+      padding: 0px 15px;
+    }
+    .task-delete{
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      color: red;
+      cursor: pointer;
+      font-size: 22px;
+
+    }
+    .task-bell{
+      position: absolute;
+      right: 35px;
+      top: 5px;
+      color: red;
+      cursor: pointer;
+      font-size: 22px;
+    }
+   
