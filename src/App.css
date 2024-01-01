@@ -86,7 +86,17 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   background-color: #EEF5FF;
   color: #176B87;
+  transition: all 0.3s ease-out;
 }
+.fade-in{
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 .form-input {
   margin: 10px 0;
 }

@@ -8,7 +8,7 @@ const TaskForm = ({tasks, setTasks}) => {
 
     const onSubmit = (e) => {
         e.preventDefault()
-        
+
         if (!text) {
           alert('Please add a task')
           return
@@ -28,7 +28,7 @@ const TaskForm = ({tasks, setTasks}) => {
       }
 
     return (
-        <form action="form" className='form' onSubmit={onSubmit}>
+        <form action="form" className='form fade-in' onSubmit={onSubmit}>
             <div className='form-input'>
                 <label>Task</label>
                 <input type="text" placeholder="Add Task" value={text} onChange={(e) => setText(e.target.value)} />
