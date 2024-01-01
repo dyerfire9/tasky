@@ -8,14 +8,19 @@ const TaskForm = ({tasks, setTasks}) => {
 
     const onSubmit = (e) => {
         e.preventDefault()
-        const dateFormated = `${day.slice(0,10)} @ ${day.slice(11,16)}`
-        console.log(dateFormated)
-        setTasks([...tasks, { id: (tasks.length), text: text, date: dateFormated, reminder: reminder }])
         
         if (!text) {
           alert('Please add a task')
           return
         }
+        if (!day){
+            alert('Please add a date')
+            return
+        }
+
+        const dateFormated = `${day.slice(0,10)} @ ${day.slice(11,16)}`
+        console.log(dateFormated)
+        setTasks([...tasks, { id: (tasks.length), text: text, date: dateFormated, reminder: reminder }])
         
         setText('')
         setDay('')

@@ -6,7 +6,8 @@
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
   margin: 5% 30% ;
-  font-family: 'Product Sans', sans-serif;    
+  font-family: 'Product Sans', sans-serif;  
+  background-color: #ffffff;  
 }
 
 .header{
@@ -14,11 +15,14 @@
   justify-content: space-between;
   text-align: center;
   position: relative;
-  border: 1px solid red;
+  background-color: #176B87;
+  border-radius: 15px 15px 0px 0px;
 }
   .title{
     display: inline-block;
     margin: 2%;
+    color: #EEF5FF;
+    letter-spacing: 3px;
   }
 
   .add-btn{
@@ -29,6 +33,9 @@
     border-radius: 10px;
     font-size: 20px;
     font-weight: 600;
+    background-color: #EEF5FF;
+    border: 1px #176B87;
+    color:#176B87;
   }
 
   .tasks{
@@ -43,21 +50,24 @@
     margin-top: 5px;  
     text-align: left;
     position: relative;
+    background-color: #EEF5FF;
 
   }
     .task-title{
       padding: 0px 15px;
       margin: 0;
+      color: #176B87;
     }
     .task-date{
       margin: 0;
       padding: 0px 15px;
+      color: #176B87;
     }
     .task-delete{
       position: absolute;
       right: 5px;
       top: 5px;
-      color: red;
+      color: #86B6F6;
       cursor: pointer;
       font-size: 22px;
 
@@ -66,7 +76,7 @@
       position: absolute;
       right: 35px;
       top: 5px;
-      color: red;
+      color: #86B6F6;
       cursor: pointer;
       font-size: 22px;
     }
@@ -74,7 +84,11 @@
 .form{
   text-align: center;
   border: 1px solid purple;
-  margin: 0% 10%;
+  border-radius: 10px;
+  margin: 2% 10%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #EEF5FF;
+  color: #176B87;
 }
 .form-input {
   margin: 10px 0;
@@ -110,7 +124,11 @@
 
 .submit-btn{
   padding: 10px 25px;
-  font-size: 16px;
+  font-size: 18px;
+  letter-spacing: 2px;
   font-weight: 600;
   border-radius: 10px;
+  margin: 5px;
+  background-color: #176B87;
+  color: #EEF5FF;
 }
