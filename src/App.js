@@ -8,19 +8,19 @@ function App() {
     {
       id: 0,
       text: 'Doctors Appointment',
-      date: 'Feb 6, 2023 @ 7:30 pm',
+      date: '2023-03-25 @ 7:30',
       reminder: true
     },
     {
       id: 1,
       text: 'Job Interview',
-      date: 'March 20, 2023 @ 9:15 pm',
+      date: '2023-05-02 @ 9:15',
       reminder: true
     },
     {
-      id: 3,
+      id: 2,
       text: 'Do Grocery',
-      date: 'August 6, 2023 @ 12:00 pm',
+      date: '2023-07-13 @ 12:00',
       reminder: false
     }
   ])

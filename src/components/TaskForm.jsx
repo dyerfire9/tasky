@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import moment from 'moment';
 
 const TaskForm = ({tasks, setTasks}) => {
     const [text, setText] = useState('')
@@ -8,8 +9,9 @@ const TaskForm = ({tasks, setTasks}) => {
 
     const onSubmit = (e) => {
         e.preventDefault()
-
-        setTasks([...tasks, { id: (tasks.length - 1), text: text, date: day, reminder: reminder }])
+        const dateFormated = `${day.slice(0,10)} @ ${day.slice(11,16)}`
+        console.log(dateFormated)
+        setTasks([...tasks, { id: (tasks.length), text: text, date: dateFormated, reminder: reminder }])
 
         if (!text) {
           alert('Please add a task')
@@ -29,7 +31,7 @@ const TaskForm = ({tasks, setTasks}) => {
             </div>
             <div className='form-input'>
                 <label>Day & Time</label>
-                <input type="datetime-local" id="birthdaytime" name="birthdaytime" value={day} onChange={(e) => setDay(e.target.value)} />
+                <input type="datetime-local" value={day} onChange={(e) => setDay(e.target.value)} />
             </div>
             <div className='form-input form-input-check'>
                 <label>Set Reminder</label>
