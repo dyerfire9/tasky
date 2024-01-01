@@ -1,6 +1,5 @@
 import React from 'react'
 import Task from './Task'
-import { useState } from 'react';
 
 const Tasks = ({tasks, setTasks}) => {
 
