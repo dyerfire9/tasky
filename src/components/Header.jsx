@@ -1,18 +1,25 @@
 import React from 'react'
+import { useState } from 'react';
+import TaskForm from './TaskForm'
 
-<<<<<<< HEAD
-const Heavder = () => {
+const Header = ({tasks, setTasks}) => {
+  const [btnText, setBtnText] = useState('Add')
+  const [toggleForm, setToggleForm] = useState(false)
+
+  const changeBtn = () => {
+    setBtnText(btnText === 'Add'? 'Close' : 'Add')
+    setToggleForm(!toggleForm)
+  }
+
   return (
-    <div>
-        Tasky
-=======
-const Header = (props) => {
-  return (
+    <>
     <div className='header'>
         <h2 className='title'>Tasky</h2>
-        <button className='add-btn'>Add</button>
->>>>>>> 846ecab9dfac908ff560a857b91d2524b60d2512
+        {btnText === 'Add' ? <button className='add-btn' onClick={changeBtn}>Add</button> : <button className='add-btn' onClick={changeBtn}>Close</button>}
     </div>
+     {toggleForm && <TaskForm tasks={tasks} setTasks={setTasks}/>}
+    </>
+
   )
 }
 

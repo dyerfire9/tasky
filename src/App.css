@@ -3,7 +3,7 @@
   border: 1px solid;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
-  margin: 5% 15% ;
+  margin: 5% 30% ;
 }
 
 .header{
@@ -68,3 +68,40 @@
       font-size: 22px;
     }
    
+.form{
+  text-align: center;
+  border: 1px solid purple;
+  margin: 0% 10%;
+}
+.form-input {
+  margin: 10px 0;
+}
+.form-input label {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.form-input input {
+  width: 35%;
+  height: 30px;
+  margin: 5px;
+  padding: 3px 7px;
+  font-size: 17px;
+}
+
+.form-input-check {
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-input-check label {
+  flex: 3;
+}
+
+.form-input-check input {
+  flex: 1;
+  height: 20px;
+}
+
